@@ -1,4 +1,4 @@
-package mentoria.dio;
+package mentoria.dio.models;
 
 public class Endereco {
     private String rua;
@@ -35,5 +35,14 @@ public class Endereco {
 
     public void setComplemento(String complemento) {
         this.complemento = complemento;
+    }
+
+    @Override
+    public String toString() {
+        return "Endereco{" +
+                "rua='" + rua + '\'' +
+                ", bairro='" + bairro + '\'' +
+                ", complemento='" + complemento + '\'' +
+                '}';
     }
 }
